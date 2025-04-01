@@ -12,8 +12,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
+// Define Props type for the page component
+type Props = {
+  params: { slug: string };
+  // searchParams?: { [key: string]: string | string[] | undefined }; // Optional searchParams
+};
+
 // This component would fetch product data based on the slug
-const ProductPage = ({ params }: { params: { slug: string } }) => {
+const ProductPage = ({ params }: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { slug } = params; // Slug will be used later for data fetching
   // Placeholder data - replace with actual data fetching logic
