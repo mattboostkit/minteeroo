@@ -20,3 +20,8 @@
 html {
   @apply bg-neutral-light;
 }
+
+/* Specific class to apply Gazpacho font */
+.font-gazpacho {
+  font-family: var(--font-gazpacho);
+}

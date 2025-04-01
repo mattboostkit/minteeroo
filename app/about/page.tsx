@@ -15,7 +15,9 @@ const AboutPage = () => {
 
       {/* Brand Story Section */}
       <section className="mb-20 md:mb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center md:text-left">The Mintee Journey</h2>
+        {/* Apply heading font */}
+        {/* Apply heading font via CSS class */}
+        <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center md:text-left">The Mintee Journey</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker">
           <p>
             Mintee started with a simple idea: to create a truly refreshing drink that was both healthy and delicious. We saw a gap in the market for a sophisticated, natural alternative to sugary sodas and bland waters. Inspired by the invigorating properties of peppermint, we set out to craft the perfect infusion.
@@ -29,7 +31,9 @@ const AboutPage = () => {
 
       {/* Peppermint Benefits Section */}
       <section className="mb-20 md:mb-24 bg-mint-light p-10 md:p-12 rounded-xl shadow-sm">
-        <h2 className="text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">The Power of Peppermint</h2>
+        {/* Apply heading font */}
+        {/* Apply heading font via CSS class */}
+        <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">The Power of Peppermint</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker text-center">
           <p>
             Peppermint isn&apos;t just about taste; it&apos;s packed with benefits. Known for centuries for its soothing properties, peppermint can aid digestion, freshen breath, and provide a natural energy boost without caffeine.
@@ -43,7 +47,9 @@ const AboutPage = () => {
 
       {/* Sustainability Section */}
       <section className="bg-white p-10 md:p-12 rounded-xl border border-neutral">
-        <h2 className="text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">Our Commitment to the Planet</h2>
+        {/* Apply heading font */}
+        {/* Apply heading font via CSS class */}
+        <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">Our Commitment to the Planet</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker">
           <p>
             Sustainability is at the heart of Mintee. We are conscious of our environmental impact and are committed to making responsible choices.

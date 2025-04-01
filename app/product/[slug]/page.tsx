@@ -41,7 +41,8 @@ const ProductPage = async ({ params }: ProductPageProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-start">
         {/* Product Image Gallery Placeholder */}
         <div className="sticky top-28">
-          <div className="relative aspect-square bg-neutral-light rounded-xl shadow-sm flex items-center justify-center">
+          {/* Added hover scale effect to placeholder */}
+          <div className="relative aspect-square bg-neutral-light rounded-xl shadow-sm flex items-center justify-center transition duration-300 transform hover:scale-105">
             {/* Placeholder for main product image */}
              <span className="text-neutral-dark">Product Image Placeholder</span>
              {/* Example using placeholder image if available */}
@@ -85,7 +86,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
           </div>
 
           {/* Add to Cart Button */}
-          <button className="w-full bg-mint hover:bg-mint-dark text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg mb-10">
+          {/* Added hover scale effect */}
+          {/* Use darker button color */}
+          <button className="w-full bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg mb-10 hover:scale-105 transform">
             Add to Basket
           </button>
 
@@ -109,7 +112,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
 
       {/* --- Customer Reviews Section --- */}
       <section id="reviews" className="mt-20 md:mt-32 border-t border-neutral pt-16 md:pt-20">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-12 text-center">
+        {/* Apply heading font */}
+        {/* Apply heading font via CSS class */}
+        <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-12 text-center">
           Customer Reviews
         </h2>
         <div className="text-center text-neutral-darker">

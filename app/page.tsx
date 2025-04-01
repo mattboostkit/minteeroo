@@ -25,7 +25,9 @@ export default function Home() {
             <p className="text-lg md:text-xl text-neutral-darker mb-10">
               Discover the crisp, cool taste of Mintee peppermint-infused water. Zero sugar, zero calories, purely refreshing.
             </p>
-            <button className="bg-mint hover:bg-mint-dark text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg">
+            {/* Added hover scale effect */}
+            {/* Use darker button color */}
+            <button className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg hover:scale-105 transform">
               Shop Now
             </button>
           </div>
@@ -51,7 +53,9 @@ export default function Home() {
       {/* --- Benefits Section --- */}
       <section id="benefits" className="w-full py-20 md:py-32 bg-white"> {/* Increased padding */}
         <div className="container mx-auto px-6 text-center"> {/* Adjusted padding */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20"> {/* Adjusted size & margin */}
+          {/* Apply heading font */}
+          {/* Apply heading font via CSS class */}
+          <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20">
             Why Choose Mintee?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12"> {/* Increased gap */}
@@ -85,13 +89,16 @@ export default function Home() {
       {/* --- Product Showcase Section --- */}
       <section id="product-showcase" className="w-full py-20 md:py-32 bg-white"> {/* Changed background */}
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20">
+          {/* Apply heading font */}
+          {/* Apply heading font via CSS class */}
+          <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20">
             Meet Mintee
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
             {/* Product Image Placeholder */}
             {/* Replace this div with an actual Image component when available */}
-            <div className="relative w-48 h-96 md:w-56 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-md">
+            {/* Added hover scale effect to placeholder */}
+            <div className="relative w-48 h-96 md:w-56 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-md transition duration-300 transform hover:scale-105">
               <span>500ml Bottle Image</span>
             </div>
             {/* Product Details */}
@@ -99,7 +106,9 @@ export default function Home() {
               <h3 className="text-2xl md:text-3xl font-semibold text-mint-dark mb-4">Mintee Peppermint Water</h3>
               <p className="text-lg text-neutral-darker mb-6 leading-relaxed">Crisp, cool, and utterly refreshing. Our signature blend in a convenient 500ml recyclable PET bottle.</p>
               <p className="text-3xl font-bold text-mint-dark mb-8">£1.99</p>
-              <button className="bg-mint hover:bg-mint-dark text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg">
+              {/* Added hover scale effect */}
+              {/* Use darker button color */}
+              <button className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg hover:scale-105 transform">
                 Add to Basket
               </button>
             </div>
@@ -112,7 +121,9 @@ export default function Home() {
       {/* --- Newsletter Signup Section --- */}
       <section id="newsletter" className="w-full py-20 md:py-32 bg-mint-light"> {/* Changed background */}
         <div className="container mx-auto px-6 text-center max-w-2xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-5"> {/* Adjusted size/margin */}
+          {/* Apply heading font */}
+          {/* Apply heading font via CSS class */}
+          <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-5">
             Stay Refreshed
           </h2>
           <p className="text-lg text-neutral-darker mb-10"> {/* Adjusted size/margin */}
@@ -127,7 +138,7 @@ export default function Home() {
             />
             <button
               type="submit"
-              className="bg-mint hover:bg-mint-dark text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg flex-shrink-0" /* Adjusted styling */
+              className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg flex-shrink-0 hover:scale-105 transform" /* Use darker color, added hover brightness */
             >
               Subscribe
             </button>
