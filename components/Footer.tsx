@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-8 pt-8 border-t border-neutral-dark text-center text-sm text-neutral">
-        © {new Date().getFullYear()} Mintee Water Ltd. All rights reserved. | Website by Roo AI
+        © {new Date().getFullYear()} Mintee Water Ltd. All rights reserved.
       </div>
     </footer>
   );
