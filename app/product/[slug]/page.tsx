@@ -14,7 +14,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 // This component would fetch product data based on the slug
 const ProductPage = ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { slug } = params; // Slug will be used later for data fetching
   // Placeholder data - replace with actual data fetching logic
   const product = {
     name: "Mintee Peppermint Water - 500ml",
