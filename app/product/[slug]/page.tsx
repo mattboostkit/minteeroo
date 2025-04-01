@@ -2,10 +2,17 @@ import React from 'react';
 import type { Metadata } from 'next';
 // Image component import removed as it's not used directly in this placeholder
 
+// Define the props type explicitly, params is now a Promise
+type ProductPageProps = {
+  params: Promise<{ slug: string }>;
+  // searchParams?: Promise<{ [key: string]: string | string[] | undefined }>; // Add if needed later
+};
+
 // This function would typically fetch metadata based on the slug
-// For now, we'll use generic metadata
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const productName = params.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()); // Simple slug to title
+// Update props type to expect params as a Promise and await it
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const awaitedParams = await params; // Await the promise
+  const productName = awaitedParams.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()); // Use awaited params
   return {
     title: `${productName} | Mintee`,
     description: `Details and purchase options for ${productName}.`,
@@ -13,10 +20,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 // This component would fetch product data based on the slug
-// Use inline type definition for params, matching generateMetadata
-const ProductPage = ({ params }: { params: { slug: string } }) => {
+// Make the component async and use the updated props type
+const ProductPage = async ({ params }: ProductPageProps) => {
+  // Await the params promise before accessing its properties
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { slug } = params; // Slug will be used later for data fetching
+  const { slug } = await params; // Slug will be used later for data fetching
   // Placeholder data - replace with actual data fetching logic
   const product = {
     name: "Mintee Peppermint Water - 500ml",
