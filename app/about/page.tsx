@@ -32,7 +32,7 @@ const AboutPage = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">The Power of Peppermint</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker text-center">
           <p>
-            Peppermint isn't just about taste; it's packed with benefits. Known for centuries for its soothing properties, peppermint can aid digestion, freshen breath, and provide a natural energy boost without caffeine.
+            Peppermint isn&apos;t just about taste; it&apos;s packed with benefits. Known for centuries for its soothing properties, peppermint can aid digestion, freshen breath, and provide a natural energy boost without caffeine.
           </p>
           <p>
             {/* Placeholder for more educational content */}

@@ -20,7 +20,7 @@ export default function Home() {
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-mint-dark mb-5 leading-tight tracking-tight"
               style={{ fontFamily: 'var(--font-gazpacho)' }}
             >
-              Put a 'pep' in your step
+              Put a &apos;pep&apos; in your step
             </h1>
             <p className="text-lg md:text-xl text-neutral-darker mb-10">
               Discover the crisp, cool taste of Mintee peppermint-infused water. Zero sugar, zero calories, purely refreshing.

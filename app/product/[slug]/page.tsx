@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import Image from 'next/image'; // Import Image component
+// Image component import removed as it's not used directly in this placeholder
 
 // This function would typically fetch metadata based on the slug
 // For now, we'll use generic metadata
