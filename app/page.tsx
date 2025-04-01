@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from 'next/image'; // Import Image component
+import Image from 'next/image';
+// Removed animation component import
 
 export default function Home() {
   return (
@@ -51,8 +52,11 @@ export default function Home() {
 
       {/* Benefits/USPs Section */}
       {/* --- Benefits Section --- */}
-      <section id="benefits" className="w-full py-20 md:py-32 bg-white"> {/* Increased padding */}
-        <div className="container mx-auto px-6 text-center"> {/* Adjusted padding */}
+      {/* Wrap section content in AnimatedDiv */}
+      <section id="benefits" className="w-full py-20 md:py-32 bg-white overflow-hidden"> {/* Added overflow-hidden */}
+        {/* Wrap the container div with AnimatedDiv */}
+        {/* Reverted to standard div container */}
+        <div className="container mx-auto px-6 text-center">
           {/* Apply heading font */}
           {/* Apply heading font via CSS class */}
           <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20">
@@ -63,50 +67,51 @@ export default function Home() {
             <div className="flex flex-col items-center p-6"> {/* Use flex column */}
               {/* Icon Placeholder */}
               <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">🌿</div>
-              <h3 className="text-xl md:text-2xl font-semibold text-mint-dark mb-3">Natural Refreshment</h3>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Natural Refreshment</h3>
               <p className="text-neutral-darker leading-relaxed">Pure water infused with real peppermint extract for a crisp, clean taste.</p> {/* Improved text */}
             </div>
             {/* Benefit 2 */}
             <div className="flex flex-col items-center p-6">
               {/* Icon Placeholder */}
               <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">💧</div>
-              <h3 className="text-xl md:text-2xl font-semibold text-mint-dark mb-3">Zero Sugar, Zero Calories</h3>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Zero Sugar, Zero Calories</h3>
               <p className="text-neutral-darker leading-relaxed">A healthy, guilt-free alternative to sugary drinks and artificial flavours.</p> {/* Improved text */}
             </div>
             {/* Benefit 3 */}
             <div className="flex flex-col items-center p-6">
               {/* Icon Placeholder */}
               <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">✨</div>
-              <h3 className="text-xl md:text-2xl font-semibold text-mint-dark mb-3">Digestive Benefits</h3>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Digestive Benefits</h3>
               <p className="text-neutral-darker leading-relaxed">Enjoy the soothing properties of peppermint, known to aid digestion.</p> {/* Improved text */}
             </div>
           </div>
+        {/* Removed extra closing div */}
         </div>
       </section>
       {/* --- End Benefits Section --- */}
 
       {/* Product Showcase Section */}
       {/* --- Product Showcase Section --- */}
-      <section id="product-showcase" className="w-full py-20 md:py-32 bg-white"> {/* Changed background */}
+      {/* Wrap section content in AnimatedDiv */}
+      <section id="product-showcase" className="w-full py-20 md:py-32 bg-white overflow-hidden"> {/* Added overflow-hidden */}
+        {/* Wrap section content in AnimatedDiv, applying container styles to it */}
+        {/* Reverted to standard div container */}
         <div className="container mx-auto px-6 text-center">
-          {/* Apply heading font */}
           {/* Apply heading font via CSS class */}
           <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-16 md:mb-20">
             Meet Mintee
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
             {/* Product Image Placeholder */}
-            {/* Replace this div with an actual Image component when available */}
             {/* Added hover scale effect to placeholder */}
             <div className="relative w-48 h-96 md:w-56 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-md transition duration-300 transform hover:scale-105">
               <span>500ml Bottle Image</span>
             </div>
             {/* Product Details */}
             <div className="text-center md:text-left max-w-md">
-              <h3 className="text-2xl md:text-3xl font-semibold text-mint-dark mb-4">Mintee Peppermint Water</h3>
+              <h3 className="font-gazpacho text-2xl md:text-3xl font-semibold text-mint-dark mb-4">Mintee Peppermint Water</h3>
               <p className="text-lg text-neutral-darker mb-6 leading-relaxed">Crisp, cool, and utterly refreshing. Our signature blend in a convenient 500ml recyclable PET bottle.</p>
               <p className="text-3xl font-bold text-mint-dark mb-8">£1.99</p>
-              {/* Added hover scale effect */}
               {/* Use darker button color */}
               <button className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg hover:scale-105 transform">
                 Add to Basket
@@ -119,26 +124,28 @@ export default function Home() {
 
       {/* Newsletter Signup Section */}
       {/* --- Newsletter Signup Section --- */}
-      <section id="newsletter" className="w-full py-20 md:py-32 bg-mint-light"> {/* Changed background */}
+      {/* Wrap section content in AnimatedDiv */}
+      <section id="newsletter" className="w-full py-20 md:py-32 bg-mint-light overflow-hidden"> {/* Added overflow-hidden */}
+        {/* Wrap section content in AnimatedDiv, applying container styles to it */}
+        {/* Reverted to standard div container */}
         <div className="container mx-auto px-6 text-center max-w-2xl">
-          {/* Apply heading font */}
           {/* Apply heading font via CSS class */}
           <h2 className="font-gazpacho text-3xl md:text-4xl lg:text-5xl font-bold text-mint-dark mb-5">
             Stay Refreshed
           </h2>
-          <p className="text-lg text-neutral-darker mb-10"> {/* Adjusted size/margin */}
+          <p className="text-lg text-neutral-darker mb-10">
             Sign up for exclusive offers, early access to new flavours, and a 10% discount on your first order.
           </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto"> {/* Added max-width */}
+          <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-grow px-5 py-3 border border-neutral-dark rounded-full focus:outline-none focus:ring-2 focus:ring-mint-dark focus:border-transparent text-lg" /* Adjusted styling */
+              className="flex-grow px-5 py-3 border border-neutral-dark rounded-full focus:outline-none focus:ring-2 focus:ring-mint-dark focus:border-transparent text-lg"
               required
             />
             <button
               type="submit"
-              className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg flex-shrink-0 hover:scale-105 transform" /* Use darker color, added hover brightness */
+              className="bg-mint-dark hover:brightness-110 text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg shadow-md hover:shadow-lg flex-shrink-0 hover:scale-105 transform"
             >
               Subscribe
             </button>
