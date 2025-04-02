@@ -34,7 +34,7 @@ export default function Home() {
           </div>
 
           {/* Image Container - Right Side */}
-          <div className="w-full md:w-1/2 lg:w-3/5 order-1 md:order-2 flex justify-center md:justify-end">
+          <div className="w-full md:w-1/2 lg:w-3/5 order-1 md:order-2 flex justify-center md:justify-end mb-10 md:mb-0"> {/* Added margin-bottom for mobile */}
             <div className="relative w-[240px] sm:w-[280px] md:w-[320px] lg:w-[400px] h-auto aspect-[487/868]">
               <Image
                 src="/images/Mintee.png"

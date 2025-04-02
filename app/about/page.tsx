@@ -19,23 +19,23 @@ const AboutPage = () => {
         {/* Apply heading font via CSS class */}
         <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center md:text-left">Born to Chill</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker">
-          <p>
+          <p className="mb-4">
             I’ve been drinking peppermint tea for as long as I can remember. It helped with bloating, soothed my headaches, and was my go-to for caffeine-free hydration. But honestly? Plain water just didn’t excite me.
           </p>
-          <p>
+          <p className="mb-4">
             So I started chilling peppermint tea in the fridge – and that’s when it clicked.
           </p>
-          <p>
+          <p className="mb-4">
             That cool, crisp flavour felt like a little daily treat.
           </p>
-          <p>
+          <p className="mb-4">
             Mintee was born out of that moment: a clean, crisp, naturally refreshing drink that makes drinking water something you actually look forward to.
           </p>
-          <p>
+          <p className="mb-4">
             Built by The Chill Co, we&apos;re on a mission to bring purposeful, plant-based drinks to life.
             We use real Irish peppermint leaves, not artificial flavourings, and our drinks are made with care for both people and planet.
           </p>
-          <p>
+          <p className="mb-4">
             We’re here to create better drinks, one chilled bottle at a time.
           </p>
           <p className="mt-6">
@@ -70,7 +70,7 @@ const AboutPage = () => {
         {/* Apply heading font via CSS class */}
         <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center">Our Commitment to the Planet</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker">
-          <p>
+          <p className="mb-6"> {/* Added bottom margin */}
             Sustainability is at the heart of Mintee. We are conscious of our environmental impact and are committed to making responsible choices.
           </p>
           <ul className="list-none space-y-3 pl-0">
