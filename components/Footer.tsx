@@ -28,7 +28,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm">
             <li><Link href="/#product-showcase" className="text-neutral hover:text-mint-light transition duration-300">Shop</Link></li>
             <li><Link href="/about" className="text-neutral hover:text-mint-light transition duration-300">Our Story</Link></li>
-            <li><Link href="/faq" className="text-neutral hover:text-mint-light transition duration-300">FAQs</Link></li>
+            <li><Link href="/faqs" className="text-neutral hover:text-mint-light transition duration-300">FAQs</Link></li>
             <li><Link href="/contact" className="text-neutral hover:text-mint-light transition duration-300">Contact Us</Link></li>
           </ul>
         </div>
@@ -38,9 +38,9 @@ const Footer = () => {
           {/* Support Links */}
           <h4 className="font-semibold text-white mb-5 text-lg">Support</h4>
           <ul className="space-y-3 text-sm">
-            <li><Link href="/shipping" className="text-neutral hover:text-mint-light transition duration-300">Shipping & Returns</Link></li>
-            <li><Link href="/privacy" className="text-neutral hover:text-mint-light transition duration-300">Privacy Policy</Link></li>
-            <li><Link href="/terms" className="text-neutral hover:text-mint-light transition duration-300">Terms of Service</Link></li>
+            <li><Link href="/shipping-returns" className="text-neutral hover:text-mint-light transition duration-300">Shipping & Returns</Link></li>
+            <li><Link href="/privacy-policy" className="text-neutral hover:text-mint-light transition duration-300">Privacy Policy</Link></li>
+            <li><Link href="/terms-of-service" className="text-neutral hover:text-mint-light transition duration-300">Terms of Service</Link></li>
           </ul>
         </div>
 
