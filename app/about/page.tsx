@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Import the Image component
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -42,9 +43,9 @@ const AboutPage = () => {
             – Rebecca, Mintee Founder 🌿
           </p>
         </div>
-        {/* Image Placeholder */}
-        <div className="mt-12 h-64 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-sm">
-          <span>Image Placeholder</span>
+        {/* Founder Image */}
+        <div className="mt-12 relative w-full aspect-video max-w-lg mx-auto rounded-lg overflow-hidden shadow-md">
+          <Image src="/images/BecJohn.png" alt="Rebecca, Mintee Founder" layout="fill" objectFit="cover" />
         </div>
       </section>
 

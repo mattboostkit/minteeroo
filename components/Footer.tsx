@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Brand Info & Socials */}
         <div className="md:col-span-1 lg:col-span-1">
           <Link href="/" className="inline-block mb-4">
-             <Image src="/images/Mintee Logo.png" alt="Mintee Logo" width={120} height={38} />
+             <Image src="/images/Mintee Logo_White.png" alt="Mintee Logo White" width={120} height={38} />
              {/* <h3 className="text-2xl font-bold text-white">Mintee</h3> */}
           </Link>
           <p className="text-sm text-neutral mb-6">Refreshingly Different. Naturally Mint.</p>
