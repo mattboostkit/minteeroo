@@ -67,7 +67,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-6"> {/* Use flex column */}
               {/* Icon Placeholder */}
               <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">🌿</div>
-              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Natural Refreshment</h3>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Refreshing and Functional</h3>
               <p className="text-neutral-darker leading-relaxed">Pure water infused with real peppermint extract for a crisp, clean taste.</p> {/* Improved text */}
             </div>
             {/* Benefit 2 */}
@@ -83,6 +83,27 @@ export default function Home() {
               <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">✨</div>
               <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Digestive Benefits</h3>
               <p className="text-neutral-darker leading-relaxed">Enjoy the soothing properties of peppermint, known to aid digestion.</p> {/* Improved text */}
+            </div>
+            {/* Benefit 4: Made in Ireland */}
+            <div className="flex flex-col items-center p-6">
+              {/* Icon Placeholder */}
+              <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">🇮🇪</div>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Made in Ireland</h3>
+              <p className="text-neutral-darker leading-relaxed">With a commitment to ethical sourcing and sustainability.</p>
+            </div>
+            {/* Benefit 5: Made for Modern Life */}
+            <div className="flex flex-col items-center p-6">
+              {/* Icon Placeholder */}
+              <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">🏃‍♀️</div>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Made for Modern Life</h3>
+              <p className="text-neutral-darker leading-relaxed">Whether you&apos;re at work, working out, or just need a mid-day boost – Mintee keeps you feeling fresh without any of the extras.</p>
+            </div>
+            {/* Benefit 6: Naturally Good */}
+            <div className="flex flex-col items-center p-6">
+              {/* Icon Placeholder */}
+              <div className="w-16 h-16 bg-mint-light rounded-full flex items-center justify-center mb-5 text-mint-dark text-3xl">✅</div>
+              <h3 className="font-gazpacho text-xl md:text-2xl font-semibold text-mint-dark mb-3">Naturally Good</h3>
+              <p className="text-neutral-darker leading-relaxed">Mintee supports digestive wellness, improves focus, and offers antimicrobial and decongestant properties.</p>
             </div>
           </div>
         {/* Removed extra closing div */}

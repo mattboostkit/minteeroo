@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <div className="container mx-auto max-w-4xl px-6 py-20 md:py-32">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-mint-dark mb-16 md:mb-20 text-center tracking-tight">
+      <h1 className="font-gazpacho text-4xl sm:text-5xl md:text-6xl font-bold text-mint-dark mb-16 md:mb-20 text-center tracking-tight">
         Our Story
       </h1>
 
@@ -17,15 +17,34 @@ const AboutPage = () => {
       <section className="mb-20 md:mb-24">
         {/* Apply heading font */}
         {/* Apply heading font via CSS class */}
-        <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center md:text-left">The Mintee Journey</h2>
+        <h2 className="font-gazpacho text-3xl md:text-4xl font-bold text-mint-dark mb-8 text-center md:text-left">Born to Chill</h2>
         <div className="prose prose-lg md:prose-xl max-w-none text-neutral-darker">
           <p>
-            Mintee started with a simple idea: to create a truly refreshing drink that was both healthy and delicious. We saw a gap in the market for a sophisticated, natural alternative to sugary sodas and bland waters. Inspired by the invigorating properties of peppermint, we set out to craft the perfect infusion.
+            I’ve been drinking peppermint tea for as long as I can remember. It helped with bloating, soothed my headaches, and was my go-to for caffeine-free hydration. But honestly? Plain water just didn’t excite me.
           </p>
           <p>
-            {/* Placeholder for more brand story content */}
-            Our journey involved countless experiments to find the purest peppermint extract and the ideal balance of flavour. We believe in transparency and quality, from sourcing our ingredients to our final product.
+            So I started chilling peppermint tea in the fridge – and that’s when it clicked.
           </p>
+          <p>
+            That cool, crisp flavour felt like a little daily treat.
+          </p>
+          <p>
+            Mintee was born out of that moment: a clean, crisp, naturally refreshing drink that makes drinking water something you actually look forward to.
+          </p>
+          <p>
+            Built by The Chill Co, we&apos;re on a mission to bring purposeful, plant-based drinks to life.
+            We use real Irish peppermint leaves, not artificial flavourings, and our drinks are made with care for both people and planet.
+          </p>
+          <p>
+            We’re here to create better drinks, one chilled bottle at a time.
+          </p>
+          <p className="mt-6">
+            – Rebecca, Mintee Founder 🌿
+          </p>
+        </div>
+        {/* Image Placeholder */}
+        <div className="mt-12 h-64 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-sm">
+          <span>Image Placeholder</span>
         </div>
       </section>
 
