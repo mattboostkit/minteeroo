@@ -123,10 +123,15 @@ export default function Home() {
             Meet Mintee
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
-            {/* Product Image Placeholder */}
-            {/* Added hover scale effect to placeholder */}
-            <div className="relative w-48 h-96 md:w-56 bg-neutral rounded-lg flex items-center justify-center text-neutral-dark shadow-md transition duration-300 transform hover:scale-105">
-              <span>500ml Bottle Image</span>
+            {/* Product Image */}
+            <div className="relative w-48 h-96 md:w-56 rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+              <Image
+                src="/images/Mintee.png"
+                alt="Mintee Peppermint Water 500ml Bottle"
+                layout="fill"
+                objectFit="contain" // Use contain to ensure the whole bottle is visible
+                sizes="(max-width: 767px) 40vw, 224px" // Adjust sizes as needed
+              />
             </div>
             {/* Product Details */}
             <div className="text-center md:text-left max-w-md">

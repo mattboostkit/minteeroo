@@ -44,8 +44,8 @@ const AboutPage = () => {
           </p>
         </div>
         {/* Founder Image */}
-        <div className="mt-12 relative w-full aspect-video max-w-lg mx-auto rounded-lg overflow-hidden shadow-md">
-          <Image src="/images/BecJohn.png" alt="Rebecca, Mintee Founder" layout="fill" objectFit="cover" />
+        <div className="mt-12 relative w-full h-[500px] max-w-lg mx-auto rounded-lg overflow-hidden shadow-md"> {/* Removed aspect-video, added fixed height */}
+          <Image src="/images/BecJohn.png" alt="Rebecca, Mintee Founder" layout="fill" objectFit="contain" /> {/* Changed objectFit to contain */}
         </div>
       </section>
 
