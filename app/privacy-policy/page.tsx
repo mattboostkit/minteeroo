@@ -21,7 +21,7 @@ const PrivacyPolicyPage = () => {
         <section>
           <h2 className="font-gazpacho text-xl font-semibold text-mint-dark mb-3">1. Introduction</h2>
           <p>
-            Welcome to Mintee ("we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at [Insert Contact Email].
+            Welcome to Mintee (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at [Insert Contact Email].
           </p>
           <p>
             This privacy notice describes how we might use your information if you visit our website at [Insert Website URL], purchase our products, or otherwise engage with us.
@@ -66,7 +66,7 @@ const PrivacyPolicyPage = () => {
         <section>
           <h2 className="font-gazpacho text-xl font-semibold text-mint-dark mb-3">7. Updates to This Notice</h2>
           <p>
-            We may update this privacy notice from time to time. The updated version will be indicated by an updated "Last Updated" date.
+            We may update this privacy notice from time to time. The updated version will be indicated by an updated &quot;Last Updated&quot; date.
           </p>
         </section>
 

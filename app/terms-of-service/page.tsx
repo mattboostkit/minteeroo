@@ -21,7 +21,7 @@ const TermsOfServicePage = () => {
         <section>
           <h2 className="font-gazpacho text-xl font-semibold text-mint-dark mb-3">1. Agreement to Terms</h2>
           <p>
-            By accessing or using our website ([Insert Website URL]) and purchasing our products, you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, then you may not access the service.
+            By accessing or using our website ([Insert Website URL]) and purchasing our products, you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of the terms, then you may not access the service.
           </p>
         </section>
 
